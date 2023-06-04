@@ -35,8 +35,16 @@ class LinkedList:
             if currentNode is None:
                 break
             print(currentNode.data)
+            if currentNode.next is None:
+        # reverseTraversalNode는 반대방향으로 움직이는 새로운 포인터
+                reverseTraversalNode = currentNode
             currentNode = currentNode.next
         print("Printing from end")
+        while True:
+            if reverseTraversalNode is None:
+                break
+            print(reverseTraversalNode.data)
+            reverseTraversalNode = reverseTraversalNode.previous
 
 
 
